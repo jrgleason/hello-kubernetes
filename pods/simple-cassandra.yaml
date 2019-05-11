@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: node-cassandra
+spec:
+  restartPolicy: Never
+  volumes:
+  - name: shared-data
+    emptyDir: {}
+
+  containers:
+  - name: simple-node
+    image: localhost:5000/jrg/hello-k8s
+    volumeMounts:
+    - name: shared-data
+      mountPath: /k8s
