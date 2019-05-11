@@ -1,0 +1,12 @@
+{
+  "name": "@jrg/hello-kubernetes",
+  "version": "0.0.1",
+  "description": "Simple example of K8s with Node",
+  "main": "src/server.mjs",
+  "scripts": {
+    "start": "node --experimental-modules src/server.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jackie Gleason",
+  "license": "GNU"
+}
